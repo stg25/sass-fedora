@@ -1,21 +1,19 @@
 
-// $mainTextColor : #4E3C1E;
-// $buttonBlue : #30488F;
-// $backgroundColor: #FFE7D2;
-//
-// @mixin flex-center {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-//
-// @mixin mainButton {
-//   color: white;
-//   background: $buttonBlue;
-//   text-decoration: none;
-//   padding: 10px;
-//   border-radius: 5px;
-// }
+$mainTextColor : #D60365;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mainButton {
+  color: white;
+  background: $buttonBlue;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
 
 * {
   box-sizing: border-box;

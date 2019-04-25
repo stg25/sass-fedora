@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="shortcut icon" href="https://www.foodora.com/wp-content/themes/foodora/img/favicon/default/16x16.png"/>
     <title>Foodora</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js" charset="utf-8"></script>
+
+    <script id="carousel-template"type="text/x-handlebars-template">
+
+    </script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- Header -->
     <div class="header">
       <div class="header-left">
-        <img src="img/logo.svg" alt="KO">
+        <img src="http://www.foodora.com/wp-content/uploads/2017/09/pandora_pink.svg" alt="logo.svg">
       </div>
       <div class="header-right">
         <a href="#">ABOUT</a>
@@ -23,34 +35,59 @@
     </div>
     <!-- Main -->
     <div class="main">
-      <div class="container">
+      <!-- First container -->
+      <div class="first-container">
         <h1>GOOD FOOD FOR YOUR EVERYDAY</h1>
         <div class="country">
           <div class="country-left">
             <h5>CHOOSE YOUR COUNTRY:</h5>
           </div>
           <div class="country-right">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/AT.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/CA.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/FL.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/FR.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/DE.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/IT.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/NL.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/NO.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/SE.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/PK.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/SG-1.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/MY.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/bangladesh2.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/TH.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/HK-1.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/TW.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/PH.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/BG.png" alt="">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/RO.png" alt="">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/AT.png" alt="AT.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/CA.png" alt="CA.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/FL.png" alt="FL.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/FR.png" alt="FR.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/DE.png" alt="DE.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/IT.png" alt="IT.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/NL.png" alt="NL.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/NO.png" alt="NO.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/SE.png" alt="SE.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/PK.png" alt="PK.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/SG-1.png" alt="SG.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/MY.png" alt="MY.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/bangladesh2.png" alt="BA.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/TH.png" alt="TH.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/HK-1.png" alt="HK.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/TW.png" alt="TW.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/PH.png" alt="PH.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/BG.png" alt="BG.png">
+            <img src="https://www.foodora.com/wp-content/uploads/2015/07/RO.png" alt="RO.png">
           </div>
         </div>
+      </div>
+      <!-- Second container -->
+      <div class="second-container">
+        <h2>ABOUT US</h2>
+        <p>For us, it's not just about bringing you good from your favourite restaurants. It's about making a connection, which is why we sit down with the chefs, dreaming up menus that will arrive fresh and full of flavour. Try us!</p>
+        <a href="#">LEARN MORE</a>
+      </div>
+      <!-- Third container -->
+      <div class="third-container">
+        <h2>CAREERS</h2>
+        <p>Hungry to make a difference? There's always room at our table. Pull up a seat.</p>
+        <a href="#">JOIN US</a>
+      </div>
+      <!-- Fourth container -->
+      <div class="fourth-container">
+        <h2>PRESS</h2>
+        <p>We've become one of the leading players in 22 markets worldwide across Europe, Canada, Australia and Asia. Find out why the press is buzzing about our work.</p>
+        <a href="#">SEE THE LATEST</a>
+      </div>
+      <!-- Fifth container -->
+      <div class="fifth-container">
+        <h2>CONTACT</h2>
+        <p>It's food lovers like you who inspire us to do what we do. Your comments, ideas and questions push us to go that extra mile, every time. So drop us a line!</p>
+        <a href="#">GET IN TOUCH</a>
       </div>
       <div class="test">
 

@@ -1,9 +1,10 @@
 
 div.main {
-  width: 100vw;
-  height: 100vh;
+  @include wh100;
 
-  div.container {
+  // First container style
+
+  div.first-container {
     width: 100vw;
     height: calc(100% - 65px);
     margin-top: 65px;
@@ -47,7 +48,6 @@ div.main {
           text-align: center;
           margin-top: 20px;
         }
-
       }
 
       div.country-right {
@@ -61,18 +61,75 @@ div.main {
           margin: 2px 5px;
           border-radius: 5px;
         }
-
       }
+    }
+  }
 
+  // Second container style
 
+  div.second-container {
+    @include wh100;
+    @include thirdFourthContStyle;
 
+    p {
+      color: #333333;
+    }
+  }
+
+  // Third container style
+
+  div.third-container {
+    @include wh100;
+    @include thirdFourthContStyle;
+
+    background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_careers_parallax_2.jpg");
+    @include parallax;
+
+    p {
+      color: white;
+    }
+  }
+
+  // Fourth container style
+
+  div.fourth-container {
+    @include wh100;
+    @include thirdFourthContStyle;
+
+    background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_parallax_tuna.jpg");
+    @include parallax;
+
+    p {
+      color: white;
+    }
+  }
+
+  // Fifth container style
+
+  div.fifth-container {
+    @include wh100;
+    @include thirdFourthContStyle;
+
+    background: $mainTextColor;
+
+    h2 {
+      color: white;
     }
 
+    p {
+      color: white;
+    }
 
-
-
-
+    a {
+      color: $mainTextColor;
+      background-color: white;
+    }
   }
+
+
+
+
+
 
   div.test {
     width: 100vw;

@@ -16,6 +16,7 @@ div.header {
   overflow: hidden;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 div.header div.header-left img {
@@ -34,7 +35,7 @@ div.main {
   height: 100vh;
 }
 
-div.main div.container {
+div.main div.first-container {
   width: 100vw;
   height: calc(100% - 65px);
   margin-top: 65px;
@@ -45,7 +46,7 @@ div.main div.container {
   position: relative;
 }
 
-div.main div.container h1 {
+div.main div.first-container h1 {
   width: 100%;
   color: white;
   font-size: 40px;
@@ -58,7 +59,7 @@ div.main div.container h1 {
           transform: translate(-50%, -50%);
 }
 
-div.main div.container div.country {
+div.main div.first-container div.country {
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -66,29 +67,185 @@ div.main div.container div.country {
   display: flex;
 }
 
-div.main div.container div.country div.country-left {
+div.main div.first-container div.country div.country-left {
   width: 25%;
   height: 100%;
 }
 
-div.main div.container div.country div.country-left h5 {
+div.main div.first-container div.country div.country-left h5 {
   color: white;
   font-size: 12px;
   text-align: center;
   margin-top: 20px;
 }
 
-div.main div.container div.country div.country-right {
+div.main div.first-container div.country div.country-right {
   width: 75%;
   height: 100%;
   padding: 20px 20px;
 }
 
-div.main div.container div.country div.country-right img {
+div.main div.first-container div.country div.country-right img {
   width: 43px;
   height: 30px;
   margin: 2px 5px;
   border-radius: 5px;
+}
+
+div.main div.second-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.main div.second-container h2 {
+  color: #D60365;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+div.main div.second-container p {
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 250px;
+  line-height: 150%;
+}
+
+div.main div.second-container a {
+  color: white;
+  background: #D60365;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 15px 70px;
+}
+
+div.main div.second-container p {
+  color: #333333;
+}
+
+div.main div.third-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_careers_parallax_2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.main div.third-container h2 {
+  color: #D60365;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+div.main div.third-container p {
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 250px;
+  line-height: 150%;
+}
+
+div.main div.third-container a {
+  color: white;
+  background: #D60365;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 15px 70px;
+}
+
+div.main div.third-container p {
+  color: white;
+}
+
+div.main div.fourth-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_parallax_tuna.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.main div.fourth-container h2 {
+  color: #D60365;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+div.main div.fourth-container p {
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 250px;
+  line-height: 150%;
+}
+
+div.main div.fourth-container a {
+  color: white;
+  background: #D60365;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 15px 70px;
+}
+
+div.main div.fourth-container p {
+  color: white;
+}
+
+div.main div.fifth-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #D60365;
+}
+
+div.main div.fifth-container h2 {
+  color: #D60365;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+div.main div.fifth-container p {
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 250px;
+  line-height: 150%;
+}
+
+div.main div.fifth-container a {
+  color: white;
+  background: #D60365;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 15px 70px;
+}
+
+div.main div.fifth-container h2 {
+  color: white;
+}
+
+div.main div.fifth-container p {
+  color: white;
+}
+
+div.main div.fifth-container a {
+  color: #D60365;
+  background-color: white;
 }
 
 div.main div.test {

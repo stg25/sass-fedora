@@ -13,7 +13,6 @@ div.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -28,6 +27,29 @@ div.header div.header-right a {
   color: #D60365;
   padding-right: 20px;
   text-decoration: none;
+}
+
+div.header div.header-right #dropdown {
+  position: relative;
+}
+
+div.header div.header-right div.dropdownOrder {
+  display: none;
+}
+
+div.header div.header-right div.dropdownOrderShow {
+  display: block;
+  width: 160px;
+  background: white;
+  text-align: left;
+  position: absolute;
+  right: 0%;
+  top: 200%;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+div.header div.header-right div.dropdownOrderShow p {
+  padding: 3px 20px;
 }
 
 div.main {
@@ -248,8 +270,35 @@ div.main div.fifth-container a {
   background-color: white;
 }
 
-div.main div.test {
+div.footer {
   width: 100vw;
-  height: 2000px;
+  height: 130px;
+  padding: 32px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.footer p {
+  color: #333333;
+}
+
+div.footer div.footer-left img {
+  width: 250px;
+  height: 40px;
+}
+
+div.footer div.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.footer div.footer-right img {
+  width: 33px;
+  height: 33px;
+}
+
+div.footer div.footer-right p {
+  display: inline;
 }
 

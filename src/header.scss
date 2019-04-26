@@ -10,7 +10,6 @@ div.header {
   justify-content: space-between;
   align-items: center;
 
-  overflow: hidden;
   position: fixed;
   top: 0;
 
@@ -33,6 +32,29 @@ div.header {
       text-decoration: none;
     }
 
-  }
+    #dropdown {
+      position: relative;
+    }
 
+    div.dropdownOrder {
+      display: none;
+    }
+
+    div.dropdownOrderShow {
+      display: block;
+      width: 160px;
+      background: white;
+      text-align: left;
+
+      position: absolute;
+      right: 0%;
+      top: 200%;
+
+      box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+
+      p {
+        padding: 3px 20px;
+      }
+    }
+  }
 }

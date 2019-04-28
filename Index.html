@@ -9,13 +9,6 @@
     <title>Foodora</title>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <!-- Handlebars -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js" charset="utf-8"></script>
-
-    <script id="carousel-template"type="text/x-handlebars-template">
-
-    </script>
-
     <!-- JS -->
     <script src="script.js"></script>
   </head>
@@ -59,32 +52,128 @@
     <!-- Main -->
     <div class="main">
       <!-- First container -->
-      <div class="first-container">
+      <div class="first-container img1">
         <h1>GOOD FOOD FOR YOUR EVERYDAY</h1>
         <div class="country">
           <div class="country-left">
             <h5>CHOOSE YOUR COUNTRY:</h5>
           </div>
           <div class="country-right">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/AT.png" alt="AT.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/CA.png" alt="CA.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/FL.png" alt="FL.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/FR.png" alt="FR.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/DE.png" alt="DE.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/IT.png" alt="IT.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/NL.png" alt="NL.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/NO.png" alt="NO.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/SE.png" alt="SE.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/PK.png" alt="PK.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/SG-1.png" alt="SG.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/MY.png" alt="MY.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/bangladesh2.png" alt="BA.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/TH.png" alt="TH.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/HK-1.png" alt="HK.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/TW.png" alt="TW.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/PH.png" alt="PH.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/BG.png" alt="BG.png">
-            <img src="https://www.foodora.com/wp-content/uploads/2015/07/RO.png" alt="RO.png">
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/AT.png" alt="AT.png">
+              <!-- Hidden language -->
+              <div class="language">
+                <p>Austria</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/CA.png" alt="CA.png">
+              <div class="language">
+                <p>Canada</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/FL.png" alt="FL.png">
+              <div class="language">
+                <p>Finland</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/FR.png" alt="FR.png">
+              <div class="language">
+                <p>France</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/DE.png" alt="DE.png">
+              <div class="language">
+                <p>Germany</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/IT.png" alt="IT.png">
+              <div class="language">
+                <p>Italy</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/NL.png" alt="NL.png">
+              <div class="language">
+                <p>Netherlands</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/NO.png" alt="NO.png">
+              <div class="language">
+                <p>Norway</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/SE.png" alt="SE.png">
+              <div class="language">
+                <p>Sweden</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/PK.png" alt="PK.png">
+              <div class="language">
+                <p>Pakistan</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/SG-1.png" alt="SG.png">
+              <div class="language">
+                <p>Singapore</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/MY.png" alt="MY.png">
+              <div class="language">
+                <p>Malaysia</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/bangladesh2.png" alt="BA.png">
+              <div class="language">
+                <p>Bangladesh</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/TH.png" alt="TH.png">
+              <div class="language">
+                <p>Thailand</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/HK-1.png" alt="HK.png">
+              <div class="language">
+                <p>HongKong</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/TW.png" alt="TW.png">
+              <div class="language">
+                <p>Taiwan</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/PH.png" alt="PH.png">
+              <div class="language">
+                <p>Philippines</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/BG.png" alt="BG.png">
+              <div class="language">
+                <p>Bulgaria</p>
+              </div>
+            </div>
+            <div class="single-country">
+              <img class="flag" src="https://www.foodora.com/wp-content/uploads/2015/07/RO.png" alt="RO.png">
+              <div class="language">
+                <p>Romania</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

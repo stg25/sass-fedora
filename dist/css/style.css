@@ -37,7 +37,7 @@ div.header div.header-right div.dropdownOrder {
   display: none;
 }
 
-div.header div.header-right div.dropdownOrderShow {
+div.header div.header-right div.showDropdownOrder {
   display: block;
   width: 160px;
   background: white;
@@ -48,7 +48,7 @@ div.header div.header-right div.dropdownOrderShow {
   box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
 }
 
-div.header div.header-right div.dropdownOrderShow p {
+div.header div.header-right div.showDropdownOrder p {
   padding: 3px 20px;
 }
 
@@ -61,10 +61,6 @@ div.main div.first-container {
   width: 100vw;
   height: calc(100% - 65px);
   margin-top: 65px;
-  background-image: url("https://www.foodora.com/wp-content/uploads/2017/08/4000x2000_parallax_4-1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -105,6 +101,8 @@ div.main div.first-container div.country div.country-right {
   width: 75%;
   height: 100%;
   padding: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 div.main div.first-container div.country div.country-right img {
@@ -112,6 +110,41 @@ div.main div.first-container div.country div.country-right img {
   height: 30px;
   margin: 2px 5px;
   border-radius: 5px;
+}
+
+div.main div.first-container div.country div.country-right div.single-country {
+  position: relative;
+}
+
+div.main div.first-container div.country div.country-right div.single-country div.language {
+  display: none;
+}
+
+div.main div.first-container div.country div.country-right div.single-country div.showLanguage {
+  position: absolute;
+  left: 50%;
+  top: -70%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+div.main div.first-container div.country div.country-right div.single-country div.showLanguage p {
+  font-size: 12px;
+  font-weight: bold;
+  background: #F5F5F5;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+div.main .img1 {
+  background-image: url("https://www.foodora.com/wp-content/uploads/2017/08/4000x2000_parallax_4-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.main .img2 {
+  background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_parallax_5.jpg");
 }
 
 div.main div.second-container {
@@ -270,6 +303,12 @@ div.main div.fifth-container a {
   background-color: white;
 }
 
+div.main a:hover {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+  transition: 0.3s;
+}
+
 div.footer {
   width: 100vw;
   height: 130px;
@@ -300,5 +339,10 @@ div.footer div.footer-right img {
 
 div.footer div.footer-right p {
   display: inline;
+}
+
+div.footer div.footer-right p:hover {
+  color: #D60365;
+  transition: 0.2s;
 }
 

@@ -9,10 +9,7 @@ div.main {
     height: calc(100% - 65px);
     margin-top: 65px;
 
-    background-image: url("https://www.foodora.com/wp-content/uploads/2017/08/4000x2000_parallax_4-1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // Test
 
     position: relative;
 
@@ -55,14 +52,51 @@ div.main {
         height: 100%;
         padding: 20px 20px;
 
+        display: flex;
+        flex-wrap: wrap;
+
         img {
           width: 43px;
           height: 30px;
           margin: 2px 5px;
           border-radius: 5px;
         }
+
+        div.single-country {
+          position: relative;
+
+          div.language {
+            display: none;
+          }
+
+          div.showLanguage {
+            position: absolute;
+            left: 50%;
+            top: -70%;
+            transform: translateX(-50%);
+
+            p {
+              font-size: 12px;
+              font-weight: bold;
+              background: #F5F5F5;
+              padding: 3px 5px;
+              border-radius: 5px;
+            }
+          }
+        }
       }
     }
+  }
+
+  .img1 {
+    background-image: url("https://www.foodora.com/wp-content/uploads/2017/08/4000x2000_parallax_4-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .img2 {
+    background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_parallax_5.jpg");
   }
 
   // Second container style
@@ -124,5 +158,12 @@ div.main {
       color: $mainTextColor;
       background-color: white;
     }
+  }
+
+  // all button hover style
+
+  a:hover {
+    filter: brightness(95%);
+    transition: 0.3s;
   }
 }

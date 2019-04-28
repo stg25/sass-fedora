@@ -32,5 +32,10 @@ div.footer {
     p {
       display: inline;
     }
+
+    p:hover {
+      color: $mainTextColor;
+      transition: 0.2s;
+    }
   }
 }

@@ -52,6 +52,12 @@ div.header div.header-right div.showDropdownOrder p {
   padding: 3px 20px;
 }
 
+@media all and (max-width: 770px) {
+  div.header {
+    background: blue;
+  }
+}
+
 div.main {
   width: 100vw;
   height: 100vh;
